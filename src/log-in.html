@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Log In</title>
+		<link rel="stylesheet" href="./css/output.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="relative h-full">
+		<div class="wrapper flex min-h-full flex-col">
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<section class="overflow-hidden">
+					<div
+						class="relative mx-auto flex h-full w-full max-w-[1080px] flex-col gap-8 px-5"
+					>
+						<!-- Pattern -->
+						<img
+							class="absolute top-[-240px] left-1/2 -z-10 -translate-x-1/2"
+							src="./images/login-pattern.png"
+							alt="pattenr"
+						/>
+						<!-- Logo -->
+						<a href="#" class="flex justify-center">
+							<img class="w-[320px]" src="./images/logo.svg" alt="logo" />
+						</a>
+
+						<!-- Content -->
+
+						<div
+							class="mx-auto flex w-full max-w-[360px] flex-col items-center"
+						>
+							<h2 class="text-center text-3xl">Log in to your account</h2>
+							<p class="mt-3 text-center">
+								Welcome back! Please enter your details.
+							</p>
+							<!-- Content -->
+							<div class="mt-8 w-full space-y-5">
+								<!-- Email -->
+								<label class="relative flex flex-col gap-[6px]" for="email">
+									<span class="text-sm font-medium text-gray-700">Email</span>
+									<div class="flex w-full">
+										<input
+											class="input"
+											type="text"
+											id="email"
+											name="email"
+											placeholder="Enter your email"
+										/>
+									</div>
+								</label>
+
+								<!--  Password  -->
+								<label class="relative flex flex-col gap-[6px]" for="password">
+									<span class="text-sm font-medium text-gray-700">
+										Password
+									</span>
+									<div class="flex w-full">
+										<input
+											class="input"
+											type="password"
+											id="password"
+											name="password"
+											placeholder="Some your password"
+										/>
+									</div>
+								</label>
+							</div>
+
+							<!-- Remember me -->
+							<div
+								class="mt-6 grid w-full grid-cols-2 items-center gap-1 sm:gap-5"
+							>
+								<!-- Checkbox -->
+								<div>
+									<input
+										type="checkbox"
+										id="checkbox"
+										name="checkbox"
+										class="peer sr-only hidden"
+									/>
+									<label for="checkbox" class="checkbox-input-label">
+										Remember me
+									</label>
+								</div>
+								<!-- Forgot password -->
+								<div class="flex justify-end text-right">
+									<a
+										href="#"
+										class="rounded-lg text-right text-sm font-medium text-[#3183EF] underline-offset-4 hover:underline"
+									>
+										Forgot password
+									</a>
+								</div>
+							</div>
+
+							<!-- Button -->
+							<div class="mt-10 w-full space-y-2">
+								<button class="btn btn-primary group w-full max-w-full">
+									Sign in
+								</button>
+								<a href="#" class="btn btn-secondary w-full max-w-full">
+									<img src="./images/google-icon.svg" alt="google icon" />
+									Sign in with Google
+								</a>
+							</div>
+
+							<!-- Link -->
+							<div class="mt-8 flex justify-center">
+								<p class="text-center text-sm text-[#85888E]">
+									Don’t have an account?
+									<a
+										href="#"
+										class="rounded-lg text-sm font-medium text-[#3183EF] underline-offset-4 hover:underline"
+									>
+										Sign up
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

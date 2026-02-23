@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Adoptics</title>
+		<link rel="stylesheet" href="./css/output.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="relative h-full">
+		<div class="wrapper flex min-h-full flex-col">
+			<img
+				class="absolute top-0 left-0 -z-10 h-auto w-full"
+				src="./images/background-pattern.png"
+				alt="bg pattenr"
+			/>
+			<!-- Header -->
+			<header class="py-3">
+				<div class="container">
+					<div
+						class="flex items-center justify-between lg:rounded-2xl lg:border lg:border-black/10 lg:bg-white lg:px-3 lg:py-5 lg:shadow-xs"
+					>
+						<a href=" #" class="z-20 flex w-[88px] sm:w-[165px]">
+							<img src="./images/logo.svg" alt="logo" />
+						</a>
+						<!-- Desktop menu -->
+						<nav
+							id="menu"
+							class="z-10 hidden lg:mx-auto lg:flex lg:w-full lg:flex-1 lg:justify-center"
+						>
+							<ul class="flex items-center gap-[26px]">
+								<!-- Menu Item -->
+								<li>
+									<a
+										href="#"
+										class="rounded-md px-3 py-2 text-base font-semibold text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
+									>
+										<span>Features</span>
+									</a>
+								</li>
+								<!-- Menu Item -->
+								<li>
+									<a
+										href="#"
+										class="rounded-md px-3 py-2 text-base font-semibold text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
+									>
+										<span>How It Works</span>
+									</a>
+								</li>
+								<!-- Menu Item -->
+								<li>
+									<a
+										href="#"
+										class="rounded-md px-3 py-2 text-base font-semibold text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
+									>
+										<span>Pricing</span>
+									</a>
+								</li>
+								<!-- Menu Item -->
+								<li>
+									<a
+										href="#"
+										class="rounded-md px-3 py-2 text-base font-semibold text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900"
+									>
+										<span>FAQ</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<!-- Mobile menu -->
+						<nav
+							id="mobile-menu"
+							class="fixed top-0 left-0 z-10 hidden h-full w-full bg-white px-5"
+						>
+							<!-- Menu -->
+							<ul class="mt-[128px] flex w-full flex-col items-center gap-10">
+								<li>
+									<a
+										href="#"
+										class="rounded-md text-base font-semibold text-gray-700 transition-colors"
+									>
+										Home
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="rounded-md text-base font-semibold text-gray-700 transition-colors"
+									>
+										How It Works
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="rounded-md text-base font-semibold text-gray-700 transition-colors"
+									>
+										Pricing
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="rounded-md text-base font-semibold text-gray-700 transition-colors"
+									>
+										FAQ
+									</a>
+								</li>
+							</ul>
+
+							<!-- Auth -->
+							<div
+								class="z-10 mx-auto mt-16 flex w-full flex-col items-center justify-center space-y-5"
+							>
+								<a href="#" class="btn btn-secondary w-full max-w-[335px] py-2">
+									Log in
+								</a>
+								<a href="#" class="btn btn-primary w-full max-w-[335px] py-2">
+									Sign up
+								</a>
+							</div>
+						</nav>
+
+						<!-- Auth  -->
+						<div class="hidden gap-5 lg:flex">
+							<a href="#" class="btn btn-secondary py-2">Log in</a>
+							<a href="#" class="btn btn-primary py-2">Sign up</a>
+						</div>
+
+						<!-- Burger Button -->
+						<button
+							id="burger"
+							class="group relative z-20 block h-4 w-[22px] lg:hidden"
+						>
+							<span
+								class="absolute top-0 left-0 flex h-[2px] w-[22px] rounded-full bg-gray-700 transition-transform group-[.active]:translate-y-1 group-[.active]:rotate-45 group-[.active]:bg-black"
+							></span>
+							<span
+								class="absolute top-1/2 left-0 flex h-[2px] w-[22px] translate-x-0 -translate-y-1/2 rounded-full bg-gray-700 transition-transform group-[.active]:opacity-0"
+							></span>
+							<span
+								class="absolute bottom-0 left-0 flex h-[2px] w-[22px] rounded-full bg-gray-700 transition-transform group-[.active]:-translate-y-[10px] group-[.active]:-rotate-45 group-[.active]:bg-black"
+							></span>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Hero -->
+				<section>
+					<div class="container">
+						<!-- Title & Buttons -->
+						<div>
+							<!-- Label -->
+							<div
+								class="mx-auto flex w-full max-w-[360px] items-center justify-between gap-2 rounded-[10px] border border-gray-200 bg-white p-1 shadow-xs"
+							>
+								<div
+									class="flex shrink-0 items-center gap-1 rounded-md border border-gray-200 bg-white py-[2px] pr-[6px] pl-[2px]"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="13"
+										height="12"
+										viewBox="0 0 13 12"
+										fill="none"
+									>
+										<circle
+											cx="6.5"
+											cy="6.00006"
+											r="4.5"
+											fill="#9E77ED"
+											stroke="#F4EBFF"
+											stroke-width="3"
+											class="animate-pulse"
+										/>
+									</svg>
+									<p class="text-xs font-medium text-gray-700">New feature</p>
+								</div>
+								<a href="#" class="group flex items-center gap-1">
+									<p
+										class="text-center text-xs font-medium text-gray-700 group-hover:text-gray-900"
+									>
+										Check out the team dashboard
+									</p>
+									<img src="./images/arrow-right.svg" alt="arrow" />
+								</a>
+							</div>
+
+							<h1 class="mx-auto mt-4 max-w-[1024px] text-center text-balance">
+								Unlock 2X+ Better Ad Performance & Landing Page Conversions
+							</h1>
+
+							<p class="mx-auto mt-4 w-full max-w-[768px] text-center lg:mt-6">
+								AdOptics automatically creates high-performing single keyword ad
+								groups and keyword-specific landing pages—tailored in real-time
+								for every click.
+							</p>
+
+							<!-- Buttons -->
+							<div
+								class="mx-auto mt-8 flex w-full flex-col items-center justify-center gap-5 sm:mt-12 sm:flex-row"
+							>
+								<a
+									href="#"
+									class="btn btn-secondary w-full max-w-[335px] sm:max-w-fit"
+								>
+									<img src="./images/play-circle.svg" alt="play icon" />
+									Demo
+								</a>
+								<a
+									href="#"
+									class="btn btn-primary w-full max-w-[335px] sm:max-w-fit"
+								>
+									Sign up
+								</a>
+							</div>
+						</div>
+
+						<!-- Schema -->
+						<div
+							class="relative mx-auto mt-16 max-w-[335px] pt-16 lg:flex lg:max-w-full lg:items-center"
+						>
+							<!-- Desktop Line Vector -->
+							<img
+								class="absolute top-0 right-[110px] -z-10 hidden xl:block"
+								src="./images/ad-vector-desktop.svg"
+								alt="vector"
+							/>
+
+							<!-- 1st -->
+							<div
+								class="relative space-y-3 xl:w-full xl:max-w-[420px] xl:space-y-6"
+							>
+								<!-- Top Right Ellipse -->
+								<img
+									class="absolute -top-10 left-0 -z-10 xl:-top-16 xl:-left-10"
+									src="./images/ellipse.svg"
+									alt="ellipse image"
+								/>
+								<!-- Bottom Left Ellipse -->
+								<img
+									class="absolute right-0 -bottom-4 -z-10"
+									src="./images/ellipse-small.svg"
+									alt="ellipse image"
+								/>
+
+								<!-- Content -->
+								<div class="space-y-6">
+									<div
+										class="flex w-full max-w-[286px] items-center justify-between rounded-[40px] border border-[#D8D8D8] bg-white px-5 py-4 lg:max-w-[368px]"
+									>
+										<p class="text-sm font-medium text-gray-800 lg:text-base">
+											I need new ad for company
+										</p>
+										<img
+											class="size-5 xl:size-6"
+											src="./images/search.svg"
+											alt="seacrh icon"
+										/>
+									</div>
+									<div
+										class="ml-auto flex w-full max-w-[286px] items-center justify-between rounded-[40px] border border-[#D8D8D8] bg-white px-5 py-4 lg:max-w-[368px]"
+									>
+										<p class="text-sm font-medium text-gray-800 lg:text-base">
+											Best CRM for construction
+										</p>
+										<img
+											class="size-5 xl:size-6"
+											src="./images/search.svg"
+											alt="seacrh icon"
+										/>
+									</div>
+									<div
+										class="flex w-full max-w-[286px] items-center justify-between rounded-[40px] border border-[#D8D8D8] bg-white px-5 py-4 lg:max-w-[368px]"
+									>
+										<p class="text-sm font-medium text-gray-800 lg:text-base">
+											Best CRM for school
+										</p>
+										<img
+											class="size-5 xl:size-6"
+											src="./images/search.svg"
+											alt="seacrh icon"
+										/>
+									</div>
+									<div
+										class="ml-5 flex w-full max-w-[286px] items-center justify-between rounded-[40px] border border-[#D8D8D8] bg-white px-5 py-4 lg:max-w-[368px]"
+									>
+										<p class="text-sm font-medium text-blue-400 lg:text-base">
+											CRM for Development Company
+										</p>
+										<img
+											class="size-5 xl:size-6"
+											src="./images/search.svg"
+											alt="seacrh icon"
+										/>
+									</div>
+								</div>
+
+								<p class="font-semibold text-gray-700 xl:text-xl">
+									Search Query
+								</p>
+							</div>
+
+							<!-- 2nd -->
+							<div
+								class="relative mx-auto mt-7 max-w-[293px] space-y-3 lg:mt-0 xl:m-0 xl:ml-[114px] xl:space-y-6"
+							>
+								<img
+									class="absolute -top-[33px] right-10 -z-10 lg:hidden"
+									src="./images/ad-vector.svg"
+									alt="vector"
+								/>
+								<div class="rounded-2xl border border-[#D8D8D8] bg-white p-4">
+									<div
+										class="flex size-9 items-center justify-center rounded-lg bg-[#D9D9D9]"
+									>
+										<p class="text-sm font-semibold text-black">Ad</p>
+									</div>
+									<h5 class="mt-2 text-xl font-semibold text-blue-400">
+										Best CRM for Development Companies – Free Trial
+									</h5>
+									<p class="mt-4 text-sm font-medium text-gray-800">
+										Custom-built CRM tools designed for dev teams. Organize
+										clients, streamline workflows, and scale faster.
+									</p>
+								</div>
+								<p class="font-semibold text-gray-700 xl:text-xl">
+									Ad Displayed
+								</p>
+							</div>
+
+							<!-- 3rd -->
+							<div
+								class="relative mx-auto mt-7 max-w-[299px] space-y-3 lg:mt-0 xl:m-0 xl:ml-[114px] xl:space-y-6"
+							>
+								<div class="rounded-2xl bg-white p-4 shadow-sm">
+									<div class="overflow-hidden rounded-lg">
+										<img src="./images/crm-image.png" alt="image" />
+									</div>
+									<h5 class="mt-2 text-xl font-semibold text-black">
+										CRM designed for development companies
+									</h5>
+
+									<!-- List -->
+									<ul class="mt-4 space-y-3">
+										<li class="flex items-start gap-2">
+											<img
+												class="size-5"
+												src="./images/check-circle.svg"
+												alt="check icon"
+											/>
+											<p class="text-sm font-medium text-blue-400">
+												Track Projects & Client Feedback
+											</p>
+										</li>
+										<li class="flex items-start gap-2">
+											<img
+												class="size-5"
+												src="./images/check-circle.svg"
+												alt="check icon"
+											/>
+											<p class="text-sm font-medium text-blue-400">
+												Automate Onboarding & Follow-ups
+											</p>
+										</li>
+										<li class="flex items-start gap-2">
+											<img
+												class="size-5"
+												src="./images/check-circle.svg"
+												alt="check icon"
+											/>
+											<p class="text-sm font-medium text-blue-400">
+												Voted Best CRM for Dev Teams
+											</p>
+										</li>
+									</ul>
+
+									<!-- Button -->
+									<div class="mt-8">
+										<a href="#" class="btn btn-primary max-w-full">
+											Get started today
+										</a>
+									</div>
+								</div>
+								<p class="font-semibold text-gray-700 xl:text-xl">
+									Landing Page
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Partners -->
+				<section>
+					<div class="container">
+						<p class="text-center font-medium">
+							Works seamlessly with all of the software you already use
+						</p>
+						<div
+							class="mt-8 grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-3 xl:grid-cols-6"
+						>
+							<div class="flex items-center justify-center">
+								<img src="./images/partner-1.svg" alt="partner logo" />
+							</div>
+							<div class="flex items-center justify-center">
+								<img src="./images/partner-2.svg" alt="partner logo" />
+							</div>
+							<div class="flex items-center justify-center">
+								<img src="./images/partner-3.svg" alt="partner logo" />
+							</div>
+							<div class="flex items-center justify-center">
+								<img src="./images/partner-4.svg" alt="partner logo" />
+							</div>
+							<div class="flex items-center justify-center">
+								<img src="./images/partner-5.svg" alt="partner logo" />
+							</div>
+							<div class="flex items-center justify-center">
+								<img src="./images/partner-6.svg" alt="partner logo" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Features -->
+				<section class="bg-blue-50">
+					<div class="container">
+						<!-- Section Header -->
+						<div
+							class="mx-auto flex w-full max-w-[768px] flex-col items-center text-center"
+						>
+							<span class="text-sm font-semibold text-blue-400 md:text-base">
+								Features
+							</span>
+							<h2 class="mt-2">Ad Optimization That Feels Like a Cheat Code</h2>
+							<p class="mt-4 text-lg lg:mt-5 lg:text-base">
+								Effortless keyword-level ad automation and dynamic landing pages
+								built to double your conversions. Trusted by growth marketers
+								and performance teams.
+							</p>
+						</div>
+
+						<!-- Content -->
+						<div
+							class="mt-12 grid gap-10 sm:grid-cols-2 sm:gap-x-5 lg:grid-cols-3 lg:gap-y-16"
+						>
+							<div class="flex flex-col items-center text-center">
+								<div
+									class="flex size-10 items-center justify-center rounded-lg border border-gray-200 bg-white md:size-12"
+								>
+									<img
+										class="size-5 md:size-6"
+										src="./images/feature-icon-1.svg"
+										alt="icon"
+									/>
+								</div>
+								<h3 class="mt-4">Auto-Split Keyword Ad Groups</h3>
+								<p class="mt-1">
+									Automatically generate single-keyword ad groups (SKAGs) to
+									improve Quality Scores, reduce CPC, and drive more relevant
+									traffic.
+								</p>
+							</div>
+							<div class="flex flex-col items-center text-center">
+								<div
+									class="flex size-10 items-center justify-center rounded-lg border border-gray-200 bg-white md:size-12"
+								>
+									<img
+										class="size-5 md:size-6"
+										src="./images/feature-icon-2.svg"
+										alt="icon"
+									/>
+								</div>
+								<h3 class="mt-4"> Instant Landing Page Generation</h3>
+								<p class="mt-1">
+									AI builds landing pages matched exactly to the keyword and
+									intent—no dev work, no generic messaging, just instant
+									relevance.
+								</p>
+							</div>
+							<div class="flex flex-col items-center text-center">
+								<div
+									class="flex size-10 items-center justify-center rounded-lg border border-gray-200 bg-white md:size-12"
+								>
+									<img
+										class="size-5 md:size-6"
+										src="./images/feature-icon-3.svg"
+										alt="icon"
+									/>
+								</div>
+								<h3 class="mt-4">Conversion Reporting Dashboard</h3>
+								<p class="mt-1">
+									Track What Matters, Improve What Works. Drill down by keyword,
+									ad, and page to see what’s performing. Adjust copy, offers,
+									and layout with a click.
+								</p>
+							</div>
+							<div class="flex flex-col items-center text-center">
+								<div
+									class="flex size-10 items-center justify-center rounded-lg border border-gray-200 bg-white md:size-12"
+								>
+									<img
+										class="size-5 md:size-6"
+										src="./images/feature-icon-4.svg"
+										alt="icon"
+									/>
+								</div>
+								<h3 class="mt-4">Ad + Page Sync</h3>
+								<p class="mt-1">
+									Our system pairs every ad with its perfect landing page
+									automatically—turning wasteful clicks into high-converting
+									journeys.
+								</p>
+							</div>
+							<div class="flex flex-col items-center text-center">
+								<div
+									class="flex size-10 items-center justify-center rounded-lg border border-gray-200 bg-white md:size-12"
+								>
+									<img
+										class="size-5 md:size-6"
+										src="./images/feature-icon-5.svg"
+										alt="icon"
+									/>
+								</div>
+								<h3 class="mt-4">Works With Your Stack</h3>
+								<p class="mt-1">
+									Seamless connections to Google Ads, GA4, and your CRM.
+									Built-in webhook support and exportable data pipelines.
+								</p>
+							</div>
+							<div class="flex flex-col items-center text-center">
+								<div
+									class="flex size-10 items-center justify-center rounded-lg border border-gray-200 bg-white md:size-12"
+								>
+									<img
+										class="size-5 md:size-6"
+										src="./images/feature-icon-6.svg"
+										alt="icon"
+									/>
+								</div>
+								<h3 class="mt-4">Copy and Paste Installation</h3>
+								<p class="mt-1">
+									No backend development needed. Just inject our simple
+									JavaScript snippet in just a few minutes to deploy automatic
+									page content updates.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- How it works -->
+				<section>
+					<div class="container">
+						<!-- Section Header -->
+						<div
+							class="mx-auto flex w-full max-w-[768px] flex-col items-center text-center"
+						>
+							<span class="text-sm font-semibold text-blue-400 md:text-base">
+								How it works
+							</span>
+							<h2 class="mt-2">
+								Launch Smarter Ad Campaigns with Just a Few Clicks
+							</h2>
+							<p class="mt-4 text-lg lg:mt-5 lg:text-base">
+								AdOptics automatically creates hyper-targeted ads and dynamic
+								landing pages that convert—just connect your Google Ads account
+								and install one simple script.
+							</p>
+						</div>
+					</div>
+
+					<!-- Content -->
+					<div class="mt-12 space-y-12 overflow-hidden lg:mt-20 lg:space-y-20">
+						<!-- Connect Your Google Ads Account -->
+						<div class="relative">
+							<div
+								class="container flex flex-col gap-10 lg:flex-row lg:items-center"
+							>
+								<div class="lg:w-full lg:max-w-[500px] xl:py-[95px]">
+									<div
+										class="flex size-12 items-center justify-center overflow-hidden rounded-full bg-[#F4EBFF]"
+									>
+										<img src="./images/char.svg" alt="chat icon" />
+									</div>
+
+									<h4 class="mt-5">Connect Your Google Ads Account</h4>
+									<p class="mt-2">
+										Zero Setup. Just Link and Launch. Get started in under 60
+										seconds.
+									</p>
+									<!-- List -->
+									<ul class="mt-8 space-y-4">
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>Securely connect your Google Ads account</p>
+										</li>
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>Instantly import campaigns and keyword data</p>
+										</li>
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>Choose where to deploy optimized ads and pages</p>
+										</li>
+									</ul>
+								</div>
+
+								<img
+									class="min-[1400px]:w-[800px]! lg:absolute lg:top-0 lg:right-[-30px] lg:w-[500px] xl:w-[700px]"
+									src="./images/how-it-works-1.png"
+									alt="how it works"
+								/>
+							</div>
+						</div>
+
+						<!-- Connect Your Google Ads Account -->
+						<div class="relative">
+							<div
+								class="container flex flex-col-reverse gap-10 lg:flex-row lg:items-center lg:justify-end"
+							>
+								<img
+									class="min-[1400px]:w-[800px]! lg:absolute lg:top-0 lg:left-[-60px] lg:w-[500px] xl:w-[700px]"
+									src="./images/how-it-works-2.png"
+									alt="how it works"
+								/>
+
+								<div class="lg:w-full lg:max-w-[530px] xl:py-[120px]">
+									<div
+										class="flex size-12 items-center justify-center overflow-hidden rounded-full bg-[#F4EBFF]"
+									>
+										<img src="./images/zap.svg" alt="chat icon" />
+									</div>
+
+									<h4 class="mt-5">Add One Line of JavaScript</h4>
+									<p class="mt-2">
+										Install Once. Unlock Real-Time Personalization. Enable
+										dynamic page rendering in seconds.
+									</p>
+									<!-- List -->
+									<ul class="mt-8 space-y-4">
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>
+												Drop a simple script on your site or via Google Tag
+												Manager
+											</p>
+										</li>
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>
+												Instantly activates AI-generated landing pages tied to
+												keywords
+											</p>
+										</li>
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>No coding or dev team required</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Watch Your Campaigns Auto-Optimize -->
+						<div class="relative">
+							<div
+								class="container flex flex-col gap-10 lg:flex-row lg:items-center"
+							>
+								<div class="lg:w-full lg:max-w-[568px] xl:py-[115px]">
+									<div
+										class="flex size-12 items-center justify-center overflow-hidden rounded-full bg-[#F4EBFF]"
+									>
+										<img src="./images/chart.svg" alt="chat icon" />
+									</div>
+
+									<h4 class="mt-5">Watch Your Campaigns Auto-Optimize</h4>
+									<p class="mt-2">
+										Your Best Ads & Keywords—Automatically UnleashedFrom first
+										click to final conversion, we handle it.
+									</p>
+									<!-- List -->
+									<ul class="mt-8 space-y-4">
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>
+												Single-keyword ad groups + matching dynamic pages
+												auto-deployed
+											</p>
+										</li>
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>
+												AI continually identifies and promotes top-performing
+												variations
+											</p>
+										</li>
+										<li class="flex items-start gap-3">
+											<img src="./images/check-circle.svg" alt="check icon" />
+											<p>
+												Full-funnel analytics show ROI and improvement
+												opportunities
+											</p>
+										</li>
+									</ul>
+								</div>
+
+								<img
+									class="min-[1400px]:w-[800px]! lg:absolute lg:top-0 lg:right-[-96px] lg:w-[500px] xl:w-[700px]"
+									src="./images/how-it-works-3.png"
+									alt="how it works"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Quote -->
+				<section class="bg-gray-100">
+					<div class="container">
+						<div class="flex flex-col items-center gap-8 text-center">
+							<img src="./images/wildcrafted.svg" alt="wildcfarted logo" />
+							<h2
+								class="font-medium tracking-[-0.96px] lg:text-5xl lg:leading-tight"
+							>
+								AdOptics 5X’d our return on ad spend. I paused some of our old
+								campaigns—they didn’t come close.
+							</h2>
+
+							<div class="flex flex-col items-center">
+								<div class="size-16 overflow-hidden rounded-full">
+									<img src="./images/avatar.png" alt="avatar" />
+								</div>
+								<p class="mt-4 text-lg font-semibold text-gray-900">
+									Shad Super
+								</p>
+								<p class="mt-1">Growth Marketer, Linkbot</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Pricing -->
+				<section>
+					<div class="container">
+						<!-- Section Header -->
+						<div
+							class="mx-auto flex w-full max-w-[768px] flex-col items-center text-center"
+						>
+							<span class="text-sm font-semibold text-blue-400 md:text-base">
+								Pricing
+							</span>
+							<h2 class="mt-2">Plans that fit your scale</h2>
+							<p class="mt-4 text-lg lg:mt-5 lg:text-base">
+								Simple, transparent pricing that grows with you. Try any plan
+								free for 30 days.
+							</p>
+						</div>
+
+						<!-- Content -->
+						<div class="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+							<div class="rounded-2xl border border-[#E9EAEB] p-8 shadow-lg">
+								<!-- Header -->
+								<div class="space-y-4">
+									<div class="flex items-center justify-between gap-5">
+										<p class="text-lg font-semibold">Basic plan</p>
+									</div>
+
+									<div class="mt-4 flex items-end gap-1">
+										<p
+											class="text-5xl font-semibold tracking-[-0.96px] text-gray-900"
+										>
+											$0
+										</p>
+										<p class="font-medium">per month</p>
+									</div>
+									<p>Basic features for solo advertisers getting started.</p>
+								</div>
+
+								<!-- Buttons -->
+								<div
+									class="mx-auto mt-8 flex w-full flex-col items-center justify-center gap-3"
+								>
+									<a href="#" class="btn btn-primary w-full max-w-full">
+										Get started
+									</a>
+									<a href="#" class="btn btn-secondary w-full max-w-full">
+										Chat to sales
+									</a>
+								</div>
+
+								<!-- List -->
+								<ul class="mt-16 space-y-4">
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>100 Keyword & Landing Page Limit</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>1 Connected Google Ads Accounts</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>1 User Seats</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Keyword Specific Landing Pages</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Individual Keyword Ad Groups</p>
+									</li>
+								</ul>
+							</div>
+							<div class="rounded-2xl border border-[#E9EAEB] p-8 shadow-lg">
+								<!-- Header -->
+								<div class="space-y-4">
+									<div class="flex items-center justify-between gap-5">
+										<p class="text-lg font-semibold">Growth plan</p>
+
+										<div
+											class="rounded-full border border-[#E9D7FE] bg-blue-50 px-3 py-1"
+										>
+											<p class="text-sm font-medium text-blue-400">Popular</p>
+										</div>
+									</div>
+
+									<div class="mt-4 flex items-end gap-1">
+										<p
+											class="text-5xl font-semibold tracking-[-0.96px] text-gray-900"
+										>
+											$99
+										</p>
+										<p class="font-medium">per month</p>
+									</div>
+									<p>For power users managing growing Google Ads campaigns.</p>
+								</div>
+
+								<!-- Buttons -->
+								<div
+									class="mx-auto mt-8 flex w-full flex-col items-center justify-center gap-3"
+								>
+									<a href="#" class="btn btn-primary w-full max-w-full">
+										Get started
+									</a>
+									<a href="#" class="btn btn-secondary w-full max-w-full">
+										Chat to sales
+									</a>
+								</div>
+
+								<!-- List -->
+								<ul class="mt-16 space-y-4">
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>1,000 Keyword & Landing Page Limit</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Up to 5 Google Ads Accounts</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Up to 5 User Seats</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Keyword Specific Landing Pages</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Individual Keyword Ad Groups</p>
+									</li>
+								</ul>
+							</div>
+							<div
+								class="rounded-2xl border border-[#E9EAEB] p-8 shadow-lg md:col-span-2 lg:col-span-1"
+							>
+								<!-- Header -->
+								<div class="space-y-4">
+									<div class="flex items-center justify-between gap-5">
+										<p class="text-lg font-semibold">Pro plan</p>
+									</div>
+
+									<div class="mt-4 flex items-end gap-1">
+										<p
+											class="text-5xl font-semibold tracking-[-0.96px] text-gray-900"
+										>
+											$299
+										</p>
+										<p class="font-medium">per month</p>
+									</div>
+									<p>For large accounts, teams, or agencies needing scale.</p>
+								</div>
+
+								<!-- Buttons -->
+								<div
+									class="mx-auto mt-8 flex w-full flex-col items-center justify-center gap-3"
+								>
+									<a href="#" class="btn btn-primary w-full max-w-full">
+										Get started
+									</a>
+									<a href="#" class="btn btn-secondary w-full max-w-full">
+										Chat to sales
+									</a>
+								</div>
+
+								<!-- List -->
+								<ul class="mt-16 space-y-4">
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>5,000 Keyword & Landing Page Limit</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Unlimited Google Ads Accounts</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Unlimited User Seats</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Keyword Specific Landing Pages</p>
+									</li>
+									<li class="flex items-start gap-3">
+										<img src="./images/check-circle.svg" alt="check icon" />
+										<p>Individual Keyword Ad Groups</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Get More Clicks and More Conversions -->
+				<section>
+					<div class="container">
+						<div
+							class="flex flex-col overflow-hidden rounded-3xl bg-gray-100 md:flex-row md:items-center"
+						>
+							<div
+								class="px-6 pt-10 md:w-full md:max-w-[620px] md:shrink-0 md:px-16"
+							>
+								<!-- Section Header -->
+								<div
+									class="mx-auto flex w-full max-w-[768px] flex-col items-center text-center"
+								>
+									<h2 class="text-left">
+										Get More Clicks and More Conversions
+									</h2>
+									<p class="mt-5 text-left text-lg lg:mt-5 lg:text-base">
+										Start your 14-day free trial and launch smarter,
+										higher-converting campaigns in minutes.
+									</p>
+								</div>
+
+								<!-- Buttons -->
+								<div
+									class="mx-auto mt-8 flex w-full flex-col items-center justify-center gap-3 md:mt-12 md:flex-row md:justify-start"
+								>
+									<a
+										href="#"
+										class="btn btn-secondary w-full max-w-full md:max-w-fit"
+									>
+										Learn more
+									</a>
+									<a
+										href="#"
+										class="btn btn-primary w-full max-w-full md:max-w-fit"
+									>
+										Get started
+									</a>
+								</div>
+							</div>
+							<!-- Image -->
+							<div class="mt-12 ml-auto pl-6 md:pl-12">
+								<img
+									src="./images/get-more-clicks.png"
+									alt="get more clicks image"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- FAQ -->
+				<section>
+					<div class="container">
+						<!-- Section Header -->
+						<div
+							class="mx-auto flex w-full max-w-[768px] flex-col items-center text-center"
+						>
+							<h2 class="mt-2">Frequently asked questions</h2>
+							<p class="mt-4 text-lg lg:mt-5 lg:text-base">
+								Everything you need to know about how AdOptics works.
+							</p>
+						</div>
+
+						<!-- Accordion -->
+						<div class="mt-16 grid">
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group grid cursor-pointer flex-col border-y border-[#E9EAEB] first:border-t-0 last:border-b-0"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full justify-between gap-2 overflow-hidden py-6 transition-all"
+								>
+									<p class="font-semibold text-gray-900">
+										How does AdOptics improve my Google Ads campaigns?
+									</p>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div
+											class="relative flex size-6 items-center justify-center rounded-full border-2 border-gray-400 bg-transparent"
+										>
+											<span
+												class="flex h-[2px] w-2.5 translate-x-[5px] rotate-90 rounded-full bg-gray-400 transition-transform group-[.active]:rotate-0"
+											></span>
+											<span
+												class="flex h-[2px] w-2.5 -translate-x-[5px] rounded-full bg-gray-400"
+											></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content grid grid-rows-[0fr] transition-all duration-500 group-[.active]:-mt-4 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<div class="p-0 pb-6">
+											<p>
+												We automatically create single-keyword ad groups (SKAGs)
+												and AI-optimized landing pages matched to each keyword.
+												This improves Quality Score, lowers CPC, and increases
+												conversions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group grid cursor-pointer flex-col border-y border-[#E9EAEB] first:border-t-0 last:border-b-0"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full justify-between gap-2 overflow-hidden py-6"
+								>
+									<p class="font-semibold text-gray-900">
+										Do I need a developer to use AdOptics?
+									</p>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div
+											class="relative flex size-6 items-center justify-center rounded-full border-2 border-gray-400 bg-transparent"
+										>
+											<span
+												class="flex h-[2px] w-2.5 translate-x-[5px] rotate-90 rounded-full bg-gray-400 transition-transform group-[.active]:rotate-0"
+											></span>
+											<span
+												class="flex h-[2px] w-2.5 -translate-x-[5px] rounded-full bg-gray-400"
+											></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content grid grid-rows-[0fr] transition-all duration-500 group-[.active]:-mt-4 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<div class="p-0 pb-6">
+											<p>
+												We automatically create single-keyword ad groups (SKAGs)
+												and AI-optimized landing pages matched to each keyword.
+												This improves Quality Score, lowers CPC, and increases
+												conversions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group grid cursor-pointer flex-col border-y border-[#E9EAEB] first:border-t-0 last:border-b-0"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full justify-between gap-2 overflow-hidden py-6"
+								>
+									<p class="font-semibold text-gray-900">
+										How are the landing pages generated?
+									</p>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div
+											class="relative flex size-6 items-center justify-center rounded-full border-2 border-gray-400 bg-transparent"
+										>
+											<span
+												class="flex h-[2px] w-2.5 translate-x-[5px] rotate-90 rounded-full bg-gray-400 transition-transform group-[.active]:rotate-0"
+											></span>
+											<span
+												class="flex h-[2px] w-2.5 -translate-x-[5px] rounded-full bg-gray-400"
+											></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content grid grid-rows-[0fr] transition-all duration-500 group-[.active]:-mt-4 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<div class="p-0 pb-6">
+											<p>
+												We automatically create single-keyword ad groups (SKAGs)
+												and AI-optimized landing pages matched to each keyword.
+												This improves Quality Score, lowers CPC, and increases
+												conversions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group grid cursor-pointer flex-col border-y border-[#E9EAEB] first:border-t-0 last:border-b-0"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full justify-between gap-2 overflow-hidden py-6"
+								>
+									<p class="font-semibold text-gray-900">
+										Can I customize the landing pages?
+									</p>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div
+											class="relative flex size-6 items-center justify-center rounded-full border-2 border-gray-400 bg-transparent"
+										>
+											<span
+												class="flex h-[2px] w-2.5 translate-x-[5px] rotate-90 rounded-full bg-gray-400 transition-transform group-[.active]:rotate-0"
+											></span>
+											<span
+												class="flex h-[2px] w-2.5 -translate-x-[5px] rounded-full bg-gray-400"
+											></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content grid grid-rows-[0fr] transition-all duration-500 group-[.active]:-mt-4 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<div class="p-0 pb-6">
+											<p>
+												We automatically create single-keyword ad groups (SKAGs)
+												and AI-optimized landing pages matched to each keyword.
+												This improves Quality Score, lowers CPC, and increases
+												conversions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group grid cursor-pointer flex-col border-y border-[#E9EAEB] first:border-t-0 last:border-b-0"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full justify-between gap-2 overflow-hidden py-6"
+								>
+									<p class="font-semibold text-gray-900">
+										Will this interfere with my current campaigns?
+									</p>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div
+											class="relative flex size-6 items-center justify-center rounded-full border-2 border-gray-400 bg-transparent"
+										>
+											<span
+												class="flex h-[2px] w-2.5 translate-x-[5px] rotate-90 rounded-full bg-gray-400 transition-transform group-[.active]:rotate-0"
+											></span>
+											<span
+												class="flex h-[2px] w-2.5 -translate-x-[5px] rounded-full bg-gray-400"
+											></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content grid grid-rows-[0fr] transition-all duration-500 group-[.active]:-mt-4 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<div class="p-0 pb-6">
+											<p>
+												We automatically create single-keyword ad groups (SKAGs)
+												and AI-optimized landing pages matched to each keyword.
+												This improves Quality Score, lowers CPC, and increases
+												conversions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group grid cursor-pointer flex-col border-y border-[#E9EAEB] first:border-t-0 last:border-b-0"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full justify-between gap-2 overflow-hidden py-6"
+								>
+									<p class="font-semibold text-gray-900">
+										How quickly will I see results?
+									</p>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div
+											class="relative flex size-6 items-center justify-center rounded-full border-2 border-gray-400 bg-transparent"
+										>
+											<span
+												class="flex h-[2px] w-2.5 translate-x-[5px] rotate-90 rounded-full bg-gray-400 transition-transform group-[.active]:rotate-0"
+											></span>
+											<span
+												class="flex h-[2px] w-2.5 -translate-x-[5px] rounded-full bg-gray-400"
+											></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content grid grid-rows-[0fr] transition-all duration-500 group-[.active]:-mt-4 group-[.active]:grid-rows-[1fr]"
+								>
+									<div class="overflow-hidden">
+										<div class="p-0 pb-6">
+											<p>
+												We automatically create single-keyword ad groups (SKAGs)
+												and AI-optimized landing pages matched to each keyword.
+												This improves Quality Score, lowers CPC, and increases
+												conversions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- CTA -->
+				<section>
+					<div class="container">
+						<div
+							class="rounded-2xl bg-blue-400 p-6 md:flex md:items-start md:justify-between md:p-10 lg:p-16"
+						>
+							<div class="md:w-full">
+								<h2 class="text-center text-white md:text-left">
+									Start your 14-day free trial
+								</h2>
+								<p class="mt-5 text-center text-[#E9D7FE] md:text-left">
+									Launch smart Google Ads campaigns with keyword-specific
+									landing pages that actually convert.
+								</p>
+							</div>
+
+							<!-- Buttons -->
+							<div
+								class="mx-auto mt-6 flex w-full flex-col items-center justify-center gap-5 md:mt-0 md:w-auto md:shrink-0 md:flex-row-reverse"
+							>
+								<a
+									href="#"
+									class="btn btn-primary w-full max-w-[328px] bg-blue-300! hover:bg-blue-600! md:max-w-fit"
+								>
+									Get started
+								</a>
+								<a
+									href="#"
+									class="btn btn-secondary w-full max-w-[328px] md:max-w-fit"
+								>
+									Learn more
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer>
+				<div class="container">
+					<div class="py-16">
+						<!-- Menu -->
+						<div class="flex justify-between gap-3">
+							<nav>
+								<p class="text-sm font-semibold text-gray-500">Product</p>
+								<ul class="mt-4 space-y-3">
+									<li>
+										<a
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Features
+										</a>
+									</li>
+									<li>
+										<a
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Pricing
+										</a>
+									</li>
+									<li>
+										<a
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Login
+										</a>
+									</li>
+									<li>
+										<a
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Sign up
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<nav>
+								<p class="text-sm font-semibold text-gray-500">Company</p>
+								<ul class="mt-4 space-y-3">
+									<li>
+										<a
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											About us
+										</a>
+									</li>
+									<li>
+										<a
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Blog
+										</a>
+									</li>
+									<li>
+										<a
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Careers
+										</a>
+									</li>
+									<li>
+										<a
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Contact us
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<nav>
+								<p class="text-sm font-semibold text-gray-500">Social</p>
+								<ul class="mt-4 space-y-3">
+									<li>
+										<a
+											target="_blank"
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Twitter
+										</a>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											LinkedIn
+										</a>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Facebook
+										</a>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											class="font-semibold text-gray-600 transition-colors hover:text-gray-900"
+											href="#@"
+										>
+											Instagram
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+						<!-- Copy -->
+						<div class="mt-16 flex items-center justify-between gap-5 pb-16">
+							<a href=" #" class="z-20 flex w-[88px] sm:w-[165px]">
+								<img src="./images/logo.svg" alt="logo" />
+							</a>
+
+							<p class="text-right text-xs">
+								© 2025 AdOptics. All rights reserved.
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
